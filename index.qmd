@@ -1,0 +1,430 @@
+---
+title: "Theories & Frameworks"
+subtitle: "Pathways and Determinants Interactions"
+date: "February 4, 2026"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: fade
+
+    # optional: helps control how PDF printing behaves
+    pdf-separate-fragments: true
+    pdf-max-pages-per-slide: 1
+---
+
+## [Pathways from Determinants to Health Outcomes]{style="color: teal;"}
+
+<br>
+
+Health outcomes result from **causal pathways** connecting different levels of influence:
+
+<div style="margin-top: 30px;">
+
+```{mermaid}
+flowchart LR
+    A[UPSTREAM<br/>Policy<br/>Structures<br/>Environment] --> B[INTERMEDIATE<br/>Behaviors<br/>Exposures<br/>Stress] --> C[DOWNSTREAM<br/>Disease<br/>Disability<br/>Mortality]
+    
+    style A fill:#d4edda,stroke:#28a745,stroke-width:3px
+    style B fill:#fff3cd,stroke:#ffc107,stroke-width:3px
+    style C fill:#f8d7da,stroke:#dc3545,stroke-width:3px
+```
+
+</div>
+
+<p style="text-align: center; margin-top: 30px;"><strong>Root causes → Mechanisms → Health outcomes</strong></p>
+
+---
+
+## [Example: SES → Cardiovascular Disease]{style="color: teal;"}
+
+<br>
+
+<div style="margin-top: 20px;">
+
+```{mermaid}
+flowchart TD
+    U1[Low income] --> I1[Poor diet]
+    U2[Limited education] --> I2[Chronic stress]
+    U3[Unstable employment] --> I3[Limited healthcare]
+    U1 & U2 & U3 --> I4[Smoking]
+    
+    I1 & I2 & I3 & I4 --> D1[Hypertension]
+    D1 --> D2[Heart disease]
+    D1 --> D3[Stroke]
+    D2 & D3 --> D4[Premature death]
+    
+    style U1 fill:#d4edda,stroke:#28a745,stroke-width:2px
+    style U2 fill:#d4edda,stroke:#28a745,stroke-width:2px
+    style U3 fill:#d4edda,stroke:#28a745,stroke-width:2px
+    style I1 fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    style I2 fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    style I3 fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    style I4 fill:#fff3cd,stroke:#ffc107,stroke-width:2px
+    style D1 fill:#f8d7da,stroke:#dc3545,stroke-width:2px
+    style D2 fill:#f8d7da,stroke:#dc3545,stroke-width:2px
+    style D3 fill:#f8d7da,stroke:#dc3545,stroke-width:2px
+    style D4 fill:#f8d7da,stroke:#dc3545,stroke-width:2px
+```
+
+</div>
+
+---
+
+## [How Do Determinants Interact?]{style="color: teal;"}
+
+
+Understanding health requires examining **how** factors work together:
+
+<div style="margin-top: 25px;">
+
+1. **Mediators**: Variables that explain the pathway (the "how")
+2. **Moderators**: Variables that change the strength of relationships (the "for whom")
+3. **Feedback loops**: Cyclical processes that amplify or reduce effects
+4. **Threshold effects**: Tipping points where small changes produce large impacts
+
+</div>
+
+---
+
+## [Mediators: Explaining the Pathway]{style="color: teal;"}
+
+<br>
+
+**Definition:** A mediator is *on the causal pathway* between X and Y
+
+<div style="margin-top: 25px;">
+
+```{mermaid}
+flowchart LR
+    E[Higher<br/>Education] --> HL[Health<br/>Literacy]
+    HL --> H[Better Health<br/>Management]
+    E -.-> H
+    
+    style E fill:#e3f2fd,stroke:#2196f3,stroke-width:3px
+    style HL fill:#fff3cd,stroke:#ffc107,stroke-width:4px
+    style H fill:#c8e6c9,stroke:#4caf50,stroke-width:3px
+```
+
+</div>
+
+**Example:** Education → Health Literacy → Better Health Outcomes
+
+<p style="text-align: center; margin-top: 25px;"><em>"Through what mechanism does X affect Y?"</em></p>
+
+---
+
+## [Moderators: Changing the Strength]{style="color: teal;"}
+
+<br>
+
+**Definition:** A moderator *changes the strength* of the relationship between X and Y
+
+<div style="margin-top: 25px;">
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Low Social Support**
+
+```{mermaid}
+flowchart TD
+    A[High<br/>Stress] ==> B[Poor<br/>Health]
+    
+    style A fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style B fill:#ef5350,stroke:#c62828,stroke-width:3px
+```
+
+Strong negative effect
+
+</td>
+<td width="50%" valign="top">
+
+**High Social Support**
+
+```{mermaid}
+flowchart TD
+    A[High<br/>Stress] --> B[Better<br/>Health]
+    
+    style A fill:#ffcdd2,stroke:#c62828,stroke-width:2px
+    style B fill:#81c784,stroke:#2e7d32,stroke-width:3px
+```
+
+Weak negative effect
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<p style="text-align: center; margin-top: 25px;"><em>"For whom is this relationship stronger/weaker?"</em></p>
+
+---
+
+## [Feedback Loops in Health]{style="color: teal;"}
+
+<br>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Positive Loop** (amplifying)
+
+```{mermaid}
+flowchart LR
+    A[Obesity] --> B[Inflammation]
+    B --> C[Insulin<br/>Resistance]
+    C --> A
+    
+    style A fill:#ffccbc,stroke:#d32f2f,stroke-width:2px
+    style B fill:#ffccbc,stroke:#d32f2f,stroke-width:2px
+    style C fill:#ffccbc,stroke:#d32f2f,stroke-width:2px
+```
+
+Vicious cycle
+
+</td>
+<td width="50%" valign="top">
+
+**Negative Loop** (stabilizing)
+
+```{mermaid}
+flowchart LR
+    A[Stress] --> B[Seek<br/>Support]
+    B --> C[Reduced<br/>Stress]
+    C -.-> A
+    
+    style A fill:#fff9c4,stroke:#f57c00,stroke-width:2px
+    style B fill:#b2dfdb,stroke:#00897b,stroke-width:2px
+    style C fill:#c8e6c9,stroke:#43a047,stroke-width:2px
+```
+
+Resilience
+
+</td>
+</tr>
+</table>
+
+<p style="text-align: center; margin-top: 25px;">Loops explain <strong>persistent inequities</strong> (positive) and <strong>resilience</strong> (negative)</p>
+
+---
+
+## [Threshold Effects]{style="color: teal;"}
+
+<br>
+
+Small changes can produce **sudden, large shifts** in outcomes
+
+<div style="margin-top: 25px;">
+
+```{mermaid}
+flowchart LR
+    A[Moderate<br/>Stress] --> B[Adaptive<br/>Responses]
+    B -.-> C[THRESHOLD<br/>CROSSED]
+    C ==> D[Burnout<br/>Depression<br/>Illness]
+    D --> E[Difficult<br/>Recovery]
+    
+    style A fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style B fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
+    style C fill:#fff176,stroke:#f57c00,stroke-width:4px
+    style D fill:#ef9a9a,stroke:#c62828,stroke-width:2px
+    style E fill:#ef9a9a,stroke:#c62828,stroke-width:2px
+```
+
+</div>
+
+<p style="text-align: center; margin-top: 25px;"><strong>Implication:</strong> Early intervention prevents crossing the threshold</p>
+
+---
+
+## [Types of Interventions]{style="color: teal;"}
+
+
+Effective public health requires **multi-level action**
+
+<div style="margin-top: 30px;">
+
+```{mermaid}
+flowchart TD
+    A["UPSTREAM<br/>Poverty reduction<br/>Housing policy<br/>Education access"] --> B["MIDSTREAM<br/>Smoking bans<br/>Walkable neighborhoods<br/>Nutrition programs"]
+    B --> C["DOWNSTREAM<br/>Medications<br/>Surgeries<br/>Rehabilitation"]
+    
+    style A fill:#d4edda,stroke:#28a745,stroke-width:3px
+    style B fill:#fff3cd,stroke:#ffc107,stroke-width:3px
+    style C fill:#f8d7da,stroke:#dc3545,stroke-width:3px
+```
+
+</div>
+
+---
+
+## [Which Level to Intervene?]{style="color: teal;"}
+
+<div style="margin-top: 20px;">
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+**Upstream** interventions:
+
+-   Harder to implement (political will, resources)
+-   Greater population impact
+-   Prevent problems before they start
+
+</td>
+<td width="50%" valign="top">
+
+**Downstream** interventions:
+
+-   Easier to implement (medical model)
+-   Limited population impact
+-   Necessary but insufficient
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<p style="margin-top: 25px;"><strong>Best approach:</strong> Comprehensive strategies addressing <strong>all three levels</strong></p>
+
+---
+
+## [Transition to Practice]{style="color: teal;"}
+
+<br>
+
+You've learned the concepts:
+
+<div style="margin-top: 25px;">
+
+- Pathways (upstream → intermediate → downstream)
+- Mediators and moderators
+- Feedback loops and thresholds
+- Intervention levels
+
+</div>
+
+<div style="margin-top: 30px;">
+
+**Now:** Apply these frameworks to real health problems
+
+</div>
+
+---
+
+## [Group Exercise: Complete the Pathway]{style="color: teal;"}
+
+
+**Task:** You'll receive an incomplete pathway diagram showing an exposure and outcome. **Your job:**
+
+<div style="margin-top: 20px;">
+
+  1. Identify what **mediates** this relationship (variables ON the pathway)
+  2. Identify what **moderates** this relationship (what makes it stronger/weaker for different people)
+  3. Explain your reasoning
+
+</div>
+
+<div style="margin-top: 25px;">
+
+**Time:** 10 minutes of group work
+
+</div>
+
+---
+
+## [Group Assignments]{style="color: teal;"}
+
+<br>
+
+<div style="margin-top: 25px;">
+
+**Snow Group:** Low income → Childhood asthma
+
+**Pasteur Group:** Rural residence → Type 2 diabetes
+
+**Nightingale Group:** Academic pressure → Depression
+
+**Gupta Group:** Discrimination → Cardiovascular disease
+
+**Fauci Group:** Job loss → Opioid overdose
+
+</div>
+
+---
+
+## [Instructions]{style="color: teal;"}
+
+
+<div style="margin-top: 20px;">
+
+1. Look at your exposure → outcome pathway
+2. **Brainstorm mediators:** What factors are ON the pathway? (How does X lead to Y?)
+3. **Brainstorm moderators:** What factors change the STRENGTH? (For whom is this stronger/weaker?)
+4. Choose your top 2-3 for each
+5. **Be ready to present** using the document camera (2-3 minutes)
+
+</div>
+
+---
+
+## [Presenting Your Work]{style="color: teal;"}
+
+<br>
+
+Each group will share:
+
+<div style="margin-top: 20px;">
+
+- Your exposure → outcome
+- Your **mediator(s)** and why they're mediators
+- Your **moderator(s)** and why they're moderators
+- Brief discussion of the pathway
+
+</div>
+
+<div style="margin-top: 25px;">
+
+**Time:** 2 minutes per group max
+
+</div>
+
+---
+
+## [Key Takeaways]{style="color: teal;"}
+
+<br>
+
+<div style="margin-top: 20px;">
+
+- Health pathways are **complex and multi-level**
+- Understanding **mediators** helps us design interventions
+- Identifying **moderators** helps us target vulnerable populations
+- **Feedback loops** explain persistent inequities
+- Effective intervention requires **upstream action**, not just downstream treatment
+
+</div>
+
+
+---
+
+## [Reflection Questions]{style="color: teal;"}
+
+<br>
+
+Consider for yourself:
+
+<div style="margin-top: 25px;">
+
+1. What upstream determinants most strongly shape health in your own community?
+
+2. Can you identify a mediator or moderator in your own health behaviors?
+
+3. Where would you intervene to create the greatest population health impact?
+
+</div>
