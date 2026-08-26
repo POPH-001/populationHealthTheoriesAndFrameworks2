@@ -1,7 +1,6 @@
 ---
 title: "Theories & Frameworks"
 subtitle: "Pathways and Determinants Interactions"
-date: "February 4, 2026"
 format:
   revealjs:
     theme: simple
