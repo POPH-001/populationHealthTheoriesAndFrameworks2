@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html#pathways-from-determinants-to-health-outcomes",
+    "href": "index.html#pathways-from-determinants-to-health-outcomes",
+    "title": "Theories & Frameworks",
+    "section": "Pathways from Determinants to Health Outcomes",
+    "text": "Pathways from Determinants to Health Outcomes\n\nHealth outcomes result from causal pathways connecting different levels of influence:\n\n\n\n\n\n\nflowchart LR\n    A[UPSTREAM&lt;br/&gt;Policy&lt;br/&gt;Structures&lt;br/&gt;Environment] --&gt; B[INTERMEDIATE&lt;br/&gt;Behaviors&lt;br/&gt;Exposures&lt;br/&gt;Stress] --&gt; C[DOWNSTREAM&lt;br/&gt;Disease&lt;br/&gt;Disability&lt;br/&gt;Mortality]\n    \n    style A fill:#d4edda,stroke:#28a745,stroke-width:3px\n    style B fill:#fff3cd,stroke:#ffc107,stroke-width:3px\n    style C fill:#f8d7da,stroke:#dc3545,stroke-width:3px\n\n\n\n\n\n\n\n\nRoot causes → Mechanisms → Health outcomes"
+  },
+  {
+    "objectID": "index.html#example-ses-cardiovascular-disease",
+    "href": "index.html#example-ses-cardiovascular-disease",
+    "title": "Theories & Frameworks",
+    "section": "Example: SES → Cardiovascular Disease",
+    "text": "Example: SES → Cardiovascular Disease\n\n\n\n\n\n\n\nflowchart TD\n    U1[Low income] --&gt; I1[Poor diet]\n    U2[Limited education] --&gt; I2[Chronic stress]\n    U3[Unstable employment] --&gt; I3[Limited healthcare]\n    U1 & U2 & U3 --&gt; I4[Smoking]\n    \n    I1 & I2 & I3 & I4 --&gt; D1[Hypertension]\n    D1 --&gt; D2[Heart disease]\n    D1 --&gt; D3[Stroke]\n    D2 & D3 --&gt; D4[Premature death]\n    \n    style U1 fill:#d4edda,stroke:#28a745,stroke-width:2px\n    style U2 fill:#d4edda,stroke:#28a745,stroke-width:2px\n    style U3 fill:#d4edda,stroke:#28a745,stroke-width:2px\n    style I1 fill:#fff3cd,stroke:#ffc107,stroke-width:2px\n    style I2 fill:#fff3cd,stroke:#ffc107,stroke-width:2px\n    style I3 fill:#fff3cd,stroke:#ffc107,stroke-width:2px\n    style I4 fill:#fff3cd,stroke:#ffc107,stroke-width:2px\n    style D1 fill:#f8d7da,stroke:#dc3545,stroke-width:2px\n    style D2 fill:#f8d7da,stroke:#dc3545,stroke-width:2px\n    style D3 fill:#f8d7da,stroke:#dc3545,stroke-width:2px\n    style D4 fill:#f8d7da,stroke:#dc3545,stroke-width:2px"
+  },
+  {
+    "objectID": "index.html#how-do-determinants-interact",
+    "href": "index.html#how-do-determinants-interact",
+    "title": "Theories & Frameworks",
+    "section": "How Do Determinants Interact?",
+    "text": "How Do Determinants Interact?\nUnderstanding health requires examining how factors work together:\n\n\nMediators: Variables that explain the pathway (the “how”)\nModerators: Variables that change the strength of relationships (the “for whom”)\nFeedback loops: Cyclical processes that amplify or reduce effects\nThreshold effects: Tipping points where small changes produce large impacts"
+  },
+  {
+    "objectID": "index.html#mediators-explaining-the-pathway",
+    "href": "index.html#mediators-explaining-the-pathway",
+    "title": "Theories & Frameworks",
+    "section": "Mediators: Explaining the Pathway",
+    "text": "Mediators: Explaining the Pathway\n\nDefinition: A mediator is on the causal pathway between X and Y\n\n\n\n\n\n\nflowchart LR\n    E[Higher&lt;br/&gt;Education] --&gt; HL[Health&lt;br/&gt;Literacy]\n    HL --&gt; H[Better Health&lt;br/&gt;Management]\n    E -.-&gt; H\n    \n    style E fill:#e3f2fd,stroke:#2196f3,stroke-width:3px\n    style HL fill:#fff3cd,stroke:#ffc107,stroke-width:4px\n    style H fill:#c8e6c9,stroke:#4caf50,stroke-width:3px\n\n\n\n\n\n\n\nExample: Education → Health Literacy → Better Health Outcomes\n\n“Through what mechanism does X affect Y?”"
+  },
+  {
+    "objectID": "index.html#moderators-changing-the-strength",
+    "href": "index.html#moderators-changing-the-strength",
+    "title": "Theories & Frameworks",
+    "section": "Moderators: Changing the Strength",
+    "text": "Moderators: Changing the Strength\n\nDefinition: A moderator changes the strength of the relationship between X and Y\n\n\n\n\nLow Social Support\n\n\n\n\n\nflowchart TD\n    A[High&lt;br/&gt;Stress] ==&gt; B[Poor&lt;br/&gt;Health]\n    \n    style A fill:#ffcdd2,stroke:#c62828,stroke-width:2px\n    style B fill:#ef5350,stroke:#c62828,stroke-width:3px\n\n\n\n\n\n\nStrong negative effect\n\n\nHigh Social Support\n\n\n\n\n\nflowchart TD\n    A[High&lt;br/&gt;Stress] --&gt; B[Better&lt;br/&gt;Health]\n    \n    style A fill:#ffcdd2,stroke:#c62828,stroke-width:2px\n    style B fill:#81c784,stroke:#2e7d32,stroke-width:3px\n\n\n\n\n\n\nWeak negative effect\n\n\n\n\n\n“For whom is this relationship stronger/weaker?”"
+  },
+  {
+    "objectID": "index.html#feedback-loops-in-health",
+    "href": "index.html#feedback-loops-in-health",
+    "title": "Theories & Frameworks",
+    "section": "Feedback Loops in Health",
+    "text": "Feedback Loops in Health\n\n\n\n\nPositive Loop (amplifying)\n\n\n\n\n\nflowchart LR\n    A[Obesity] --&gt; B[Inflammation]\n    B --&gt; C[Insulin&lt;br/&gt;Resistance]\n    C --&gt; A\n    \n    style A fill:#ffccbc,stroke:#d32f2f,stroke-width:2px\n    style B fill:#ffccbc,stroke:#d32f2f,stroke-width:2px\n    style C fill:#ffccbc,stroke:#d32f2f,stroke-width:2px\n\n\n\n\n\n\nVicious cycle\n\n\nNegative Loop (stabilizing)\n\n\n\n\n\nflowchart LR\n    A[Stress] --&gt; B[Seek&lt;br/&gt;Support]\n    B --&gt; C[Reduced&lt;br/&gt;Stress]\n    C -.-&gt; A\n    \n    style A fill:#fff9c4,stroke:#f57c00,stroke-width:2px\n    style B fill:#b2dfdb,stroke:#00897b,stroke-width:2px\n    style C fill:#c8e6c9,stroke:#43a047,stroke-width:2px\n\n\n\n\n\n\nResilience\n\n\n\n\nLoops explain persistent inequities (positive) and resilience (negative)"
+  },
+  {
+    "objectID": "index.html#threshold-effects",
+    "href": "index.html#threshold-effects",
+    "title": "Theories & Frameworks",
+    "section": "Threshold Effects",
+    "text": "Threshold Effects\n\nSmall changes can produce sudden, large shifts in outcomes\n\n\n\n\n\n\nflowchart LR\n    A[Moderate&lt;br/&gt;Stress] --&gt; B[Adaptive&lt;br/&gt;Responses]\n    B -.-&gt; C[THRESHOLD&lt;br/&gt;CROSSED]\n    C ==&gt; D[Burnout&lt;br/&gt;Depression&lt;br/&gt;Illness]\n    D --&gt; E[Difficult&lt;br/&gt;Recovery]\n    \n    style A fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px\n    style B fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px\n    style C fill:#fff176,stroke:#f57c00,stroke-width:4px\n    style D fill:#ef9a9a,stroke:#c62828,stroke-width:2px\n    style E fill:#ef9a9a,stroke:#c62828,stroke-width:2px\n\n\n\n\n\n\n\n\nImplication: Early intervention prevents crossing the threshold"
+  },
+  {
+    "objectID": "index.html#types-of-interventions",
+    "href": "index.html#types-of-interventions",
+    "title": "Theories & Frameworks",
+    "section": "Types of Interventions",
+    "text": "Types of Interventions\nEffective public health requires multi-level action\n\n\n\n\n\n\nflowchart TD\n    A[\"UPSTREAM&lt;br/&gt;Poverty reduction&lt;br/&gt;Housing policy&lt;br/&gt;Education access\"] --&gt; B[\"MIDSTREAM&lt;br/&gt;Smoking bans&lt;br/&gt;Walkable neighborhoods&lt;br/&gt;Nutrition programs\"]\n    B --&gt; C[\"DOWNSTREAM&lt;br/&gt;Medications&lt;br/&gt;Surgeries&lt;br/&gt;Rehabilitation\"]\n    \n    style A fill:#d4edda,stroke:#28a745,stroke-width:3px\n    style B fill:#fff3cd,stroke:#ffc107,stroke-width:3px\n    style C fill:#f8d7da,stroke:#dc3545,stroke-width:3px"
+  },
+  {
+    "objectID": "index.html#which-level-to-intervene",
+    "href": "index.html#which-level-to-intervene",
+    "title": "Theories & Frameworks",
+    "section": "Which Level to Intervene?",
+    "text": "Which Level to Intervene?\n\n\n\n\nUpstream interventions:\n\nHarder to implement (political will, resources)\nGreater population impact\nPrevent problems before they start\n\n\n\nDownstream interventions:\n\nEasier to implement (medical model)\nLimited population impact\nNecessary but insufficient\n\n\n\n\n\n\nBest approach: Comprehensive strategies addressing all three levels"
+  },
+  {
+    "objectID": "index.html#transition-to-practice",
+    "href": "index.html#transition-to-practice",
+    "title": "Theories & Frameworks",
+    "section": "Transition to Practice",
+    "text": "Transition to Practice\n\nYou’ve learned the concepts:\n\n\nPathways (upstream → intermediate → downstream)\nMediators and moderators\nFeedback loops and thresholds\nIntervention levels\n\n\n\nNow: Apply these frameworks to real health problems"
+  },
+  {
+    "objectID": "index.html#group-exercise-complete-the-pathway",
+    "href": "index.html#group-exercise-complete-the-pathway",
+    "title": "Theories & Frameworks",
+    "section": "Group Exercise: Complete the Pathway",
+    "text": "Group Exercise: Complete the Pathway\nTask: You’ll receive an incomplete pathway diagram showing an exposure and outcome. Your job:\n\n\nIdentify what mediates this relationship (variables ON the pathway)\nIdentify what moderates this relationship (what makes it stronger/weaker for different people)\nExplain your reasoning\n\n\n\nTime: 10 minutes of group work"
+  },
+  {
+    "objectID": "index.html#group-assignments",
+    "href": "index.html#group-assignments",
+    "title": "Theories & Frameworks",
+    "section": "Group Assignments",
+    "text": "Group Assignments\n\n\nSnow Group: Low income → Childhood asthma\nPasteur Group: Rural residence → Type 2 diabetes\nNightingale Group: Academic pressure → Depression\nGupta Group: Discrimination → Cardiovascular disease\nFauci Group: Job loss → Opioid overdose"
+  },
+  {
+    "objectID": "index.html#instructions",
+    "href": "index.html#instructions",
+    "title": "Theories & Frameworks",
+    "section": "Instructions",
+    "text": "Instructions\n\n\nLook at your exposure → outcome pathway\nBrainstorm mediators: What factors are ON the pathway? (How does X lead to Y?)\nBrainstorm moderators: What factors change the STRENGTH? (For whom is this stronger/weaker?)\nChoose your top 2-3 for each\nBe ready to present using the document camera (2-3 minutes)"
+  },
+  {
+    "objectID": "index.html#presenting-your-work",
+    "href": "index.html#presenting-your-work",
+    "title": "Theories & Frameworks",
+    "section": "Presenting Your Work",
+    "text": "Presenting Your Work\n\nEach group will share:\n\n\nYour exposure → outcome\nYour mediator(s) and why they’re mediators\nYour moderator(s) and why they’re moderators\nBrief discussion of the pathway\n\n\n\nTime: 2 minutes per group max"
+  },
+  {
+    "objectID": "index.html#key-takeaways",
+    "href": "index.html#key-takeaways",
+    "title": "Theories & Frameworks",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n\n\nHealth pathways are complex and multi-level\nUnderstanding mediators helps us design interventions\nIdentifying moderators helps us target vulnerable populations\nFeedback loops explain persistent inequities\nEffective intervention requires upstream action, not just downstream treatment"
+  },
+  {
+    "objectID": "index.html#reflection-questions",
+    "href": "index.html#reflection-questions",
+    "title": "Theories & Frameworks",
+    "section": "Reflection Questions",
+    "text": "Reflection Questions\n\nConsider for yourself:\n\n\nWhat upstream determinants most strongly shape health in your own community?\nCan you identify a mediator or moderator in your own health behaviors?\nWhere would you intervene to create the greatest population health impact?"
+  }
+]
